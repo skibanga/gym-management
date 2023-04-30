@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-04-29 12:59:28.636562",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "workout_plan",
+  "section_break_c75ml",
+  "name1",
+  "type",
+  "description",
+  "section_break_iietm",
+  "member",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "workout_plan",
+   "fieldtype": "Link",
+   "label": "Workout Plan",
+   "options": "Gym Workout Plan"
+  },
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "Member",
+   "options": "Gym Membership"
+  },
+  {
+   "fieldname": "section_break_c75ml",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "workout_plan.name1",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "workout_plan.type",
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "workout_plan.description",
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_iietm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "member.status",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-29 13:10:23.314101",
+ "modified_by": "Administrator",
+ "module": "Gym Management",
+ "name": "Gym Subscribe Workout Plan",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:LB-{YYYY}-{####}",
+ "creation": "2023-04-30 04:10:03.584892",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "locker",
+  "from_date",
+  "column_break_tcmau",
+  "to_date",
+  "locker_details_section",
+  "number_of_slot",
+  "locker_status",
+  "booked_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "locker",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Locker",
+   "options": "Gym Locker",
+   "reqd": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_tcmau",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "To Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "locker_details_section",
+   "fieldtype": "Section Break",
+   "label": "Locker Details"
+  },
+  {
+   "fieldname": "number_of_slot",
+   "fieldtype": "Data",
+   "label": "Number of Slot Available",
+   "read_only": 1
+  },
+  {
+   "fieldname": "locker_status",
+   "fieldtype": "Data",
+   "label": "Locker Status"
+  },
+  {
+   "fieldname": "booked_by",
+   "fieldtype": "Data",
+   "label": "Booked By",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-30 05:18:41.256338",
+ "modified_by": "Administrator",
+ "module": "Gym Management",
+ "name": "Gym Locker Booking",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Member",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

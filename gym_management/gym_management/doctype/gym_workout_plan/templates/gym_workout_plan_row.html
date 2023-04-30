@@ -1,0 +1,18 @@
+
+
+	<div class="card" style="width: 20rem;">
+		<img style="height:200px" class="card-img-top"  alt="{{ title }}" src="{{ image }}">
+		<div class="card-body">
+		  <h5 class="card-title">
+			{%- if type == 'Beginner' -%}
+			<span class="badge badge-info">Beginner</span>
+			{%- elif type == 'Intermediate' -%}
+			<span class="badge badge-success">Intermediate</span>
+			{%- elif type == 'Advanced' -%}
+			<span class="badge badge-danger">Advanced</span>
+			{%- endif -%}
+		  </h5>
+		  <p class="card-text">{{ description }}</p>
+		  <a href="#" class="btn btn-secondary btn-sm">Book</a>
+		</div>
+	  </div>

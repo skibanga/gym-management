@@ -1,0 +1,33 @@
+{%  extends "templates/web.html" %}
+
+{% block page_content %}
+
+<div class="py-20 ">
+
+    <div class="col">
+
+        <div>
+
+            {%- if type == 'Beginner' -%}
+
+            <span class="badge badge-success">Beginner</span>
+            {%- elif type == 'Intermediate' -%}
+
+            <span class="badge badge-primary">Intermediate</span>
+
+            {%- elif type == 'Advanced' -%}
+
+            <span class="badge badge-primary">Advanced</span>
+
+            {%- endif -%}
+
+        </div>
+        
+
+        <p>{{ description }}</p>
+
+    </div>
+
+</div>
+
+{% endblock %}

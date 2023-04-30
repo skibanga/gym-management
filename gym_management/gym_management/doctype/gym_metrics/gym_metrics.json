@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-02-06 12:00:23.525514",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "weight",
+  "calories_intake",
+  "heart_rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "weight",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Weight"
+  },
+  {
+   "fieldname": "calories_intake",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Calories intake"
+  },
+  {
+   "fieldname": "heart_rate",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Heart rate"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-04-30 06:00:11.247690",
+ "modified_by": "Administrator",
+ "module": "Gym Management",
+ "name": "Gym Metrics",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
